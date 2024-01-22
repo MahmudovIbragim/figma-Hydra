@@ -4,6 +4,7 @@ import logo from '../../../assets/logo.png';
 import { ReactComponent as LogoName } from '../../../assets/logo-name.svg';
 import ButtonBG from '../../ui/buttons/ButtonBG.jsx';
 import ButtonNoBG from '../../ui/buttons/ButtonNoBG.jsx';
+import hamburger from '../../../assets/icons/Hamburger-Button.svg'
 
 const Header = () => {
 	const link = [
@@ -31,7 +32,10 @@ const Header = () => {
 					<div className={scss.content}>
 						<div className={scss.left}>
 							<img src={logo} alt="logo" />
-							<LogoName />
+							<LogoName className={scss.logo} />
+						</div>
+						<div className={scss.hamburger}>
+							<img src={hamburger} alt="" />
 						</div>
 						<div className={scss.middle}>
 							<nav>

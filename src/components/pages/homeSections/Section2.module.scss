@@ -1,0 +1,222 @@
+.section_2 {
+	margin-top: 100px;
+	.sectionIntroduc {
+		display: flex;
+		justify-content: space-between;
+		.subjectIntroduc {
+			// display: flex;
+			div {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				p {
+					width: 251px;
+
+					font-size: 36px;
+					font-weight: 300;
+				}
+				img {
+					width: 228px;
+					height: 100px;
+					margin-left: 30px;
+				}
+			}
+			h1 {
+				color: #ffffffcc;
+				font-size: 36px;
+				font-weight: 700;
+			}
+		}
+		.textIntroduc {
+			max-width: 652px;
+			p {
+				width: 100%;
+				color: #ffffffcc;
+				font-family: 'Montserrat', sans-serif;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 30px;
+			}
+		}
+	}
+	.sectionAbout {
+		margin-top: 120px;
+		.aboutHydra {
+			display: flex;
+			justify-content: space-between;
+			.imgAbout {
+				max-width: 546px;
+				img {
+					width: 100%;
+				}
+			}
+			.aboutInfo {
+				padding: 30px 0px;
+				max-width: 630px;
+				h1 {
+					font-size: 36px;
+					font-weight: 700;
+					margin-bottom: 10px;
+				}
+				h2 {
+					color: rgba(255, 255, 255, 0.95);
+					font-size: 36px;
+					font-weight: 300;
+				}
+				p {
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 30px;
+					margin-top: 42px;
+					margin-bottom: 45px;
+				}
+			}
+		}
+		.whyBuild {
+			display: flex;
+			justify-content: space-between;
+			margin-top: 200px;
+			.subjectWhyBuild {
+				h1 {
+					font-size: 36px;
+					font-weight: 700;
+				}
+				.textIconRight {
+					display: flex;
+					align-items: center;
+					p {
+						font-size: 36px;
+						font-weight: 300;
+						margin-right: 16px;
+					}
+				}
+			}
+			.textWhyBuild {
+				max-width: 652px;
+				p {
+					width: 100%;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 30px;
+				}
+			}
+		}
+	}
+}
+
+
+///////////////media
+
+@media (max-width:390px){
+	.section_2 {
+	margin-top: 100px;
+	.sectionIntroduc {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		.subjectIntroduc {
+			display: flex;
+			flex-direction: column;
+
+			div {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				p {
+					
+
+					font-size: 36px;
+					font-weight: 300;
+				}
+				img {
+					display: none;
+					
+				}
+			}
+			h1 {
+				color: #ffffffcc;
+				font-size: 36px;
+				font-weight: 700;
+			}
+		}
+		.textIntroduc {
+			max-width: 652px;
+			p {
+				display: none;
+				
+			}
+		}
+	}
+	.sectionAbout {
+		margin-top: 120px;
+		.aboutHydra {
+			display: flex;
+			justify-content: space-between;
+			flex-direction: column;
+			text-align: center;
+			.imgAbout {
+				max-width: 390px;
+				img {
+					width: 100%;
+				}
+			}
+			.aboutInfo {
+				padding: 30px 0px;
+				max-width: 630px;
+				h1 {
+					display: none;
+					
+				}
+				h2 {
+					display: none;
+					
+				}
+				p {
+					text-align: start;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 30px;
+					margin-top: 42px;
+					margin-bottom: 45px;
+				}
+			}
+		}
+		.whyBuild {
+			display: flex;
+			justify-content: center;
+			margin-top: 100px;
+			.subjectWhyBuild {
+				
+				h1 {
+					font-size: 36px;
+					font-weight: 700;
+				}
+				.textIconRight {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					p {
+						font-size: 36px;
+						font-weight: 300;
+						margin-right: 16px;
+					}
+					img{
+						display: none;
+					}
+				}
+			}
+			.textWhyBuild {
+				max-width: 652px;
+				p {
+					display: none;
+					width: 100%;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 30px;
+				}
+			}
+		}
+	}
+}
+
+}

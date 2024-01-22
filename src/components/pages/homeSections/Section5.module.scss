@@ -1,0 +1,172 @@
+.section_5 {
+	margin-top: 150px;
+	margin-bottom: 150px;
+	.howBuild {
+		display: flex;
+		justify-content: space-between;
+		.subjectHowBuild {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			h1 {
+				font-size: 36px;
+				font-weight: 700;
+			}
+			.textHowIconRight {
+				display: flex;
+				align-items: center;
+				p {
+					width: 321px;
+					margin-right: 10px;
+					height: auto;
+					font-size: 36px;
+					font-weight: 300;
+				}
+			}
+		}
+		.textHowBuild {
+			max-width: 652px;
+			p {
+				color: #ffffffd5;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 30px;
+			}
+		}
+	}
+	.containerNumbers {
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		margin-top: 100px;
+		background: url('../../../assets/lineIcons/Vector\ 15.svg') no-repeat;
+		background-size: 94%;
+		background-position: left top;
+		.box {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			.imgNumber {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border: #211e2e solid 15px;
+				padding: 70px;
+				border-radius: 100%;
+				width: 159px;
+				height: 159px;
+				background: linear-gradient(251deg, #c0b7e8 12.87%, #8176af 89.33%);
+			}
+			.textIcon {
+				display: flex;
+				align-items: center;
+				.smallRight {
+					width: 67px;
+					margin-bottom: 38px;
+				}
+				p {
+					font-size: 24px;
+					font-weight: 700;
+					width: 187px;
+					line-height: 38px;
+				}
+			}
+		}
+	}
+}
+///////////MEDIA
+
+@media (max-width: 390px) {
+	.section_5 {
+		margin-top: 100px;
+		margin-bottom: 100px;
+		.howBuild {
+			text-align: center;
+			display: flex;
+			justify-content: space-between;
+			max-width: 390px;
+			.subjectHowBuild {
+				max-width: 390px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				h1 {
+					font-size: 36px;
+					font-weight: 700;
+				}
+				.textHowIconRight {
+					display: flex;
+					align-items: center;
+					p {
+						// width: 321px;
+						margin-right: 10px;
+						height: auto;
+						font-size: 36px;
+						font-weight: 300;
+					}
+					img {
+						display: none;
+					}
+				}
+			}
+			.textHowBuild {
+				max-width: 652px;
+				p {
+					display: none;
+					color: #ffffffd5;
+					font-size: 16px;
+					font-weight: 400;
+					line-height: 30px;
+				}
+			}
+		}
+		.containerNumbers {
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
+			margin-top: 100px;
+			background: none;
+			background-size: 94%;
+			background-position: left top;
+			.box {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				.imgNumber {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					border: #211e2e solid 15px;
+					padding: 70px;
+					border-radius: 100%;
+					width: 159px;
+					height: 159px;
+					background: linear-gradient(251deg, #c0b7e8 12.87%, #8176af 89.33%);
+				}
+				.textIcon {
+					display: flex;
+					align-items: center;
+					.smallRight {
+						width: 67px;
+						margin-bottom: 38px;
+					}
+					p {
+						font-size: 24px;
+						font-weight: 700;
+						width: 187px;
+						line-height: 38px;
+					}
+				}
+			}
+			.box:nth-child(2) {
+				display: none;
+			}
+			.box:nth-child(2n) {
+				display: none;
+			}
+			.box:nth-child(3n) {
+				display: none;
+			}
+		}
+	}
+}

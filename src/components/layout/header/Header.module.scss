@@ -1,6 +1,6 @@
 .header {
-  padding-block: 50px;
-	
+	padding-block: 50px;
+
 	.content {
 		display: flex;
 		justify-content: space-between;
@@ -14,6 +14,9 @@
 				width: 100px;
 				height: auto;
 			}
+		}
+		.hamburger{
+			display: none;
 		}
 		.middle {
 			nav {
@@ -40,6 +43,55 @@
 			justify-content: center;
 			align-items: center;
 			gap: 40px;
+		}
+	}
+}
+
+@media (max-width: 390px) {
+	html {
+		padding: 0px;
+		margin: 0px;
+		body {
+			color: #ffffff;
+			font-family: 'Montserrat', sans-serif;
+			background: #302c42;
+			.header {
+				padding-block: 50px;
+
+				.content {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					.left {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						gap: 15px;
+						img {
+							width: 69px;
+							height: auto;
+						}
+						.logo{
+							width: 46px;
+							height: auto;
+						}
+						
+					}
+					.hamburger{
+						display: block;
+						margin-left: auto;
+					}
+					.middle {
+						nav {
+							display: none;
+						}
+					}
+					.right {
+						display: none;
+						
+					}
+				}
+			}
 		}
 	}
 }
